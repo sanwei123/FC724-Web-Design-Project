@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Collection Form</title>
+  <!-- Use Flask's url_for to correctly link to the static CSS file -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header>
+  <h1>GIC Student Progress Data Collection</h1>
+</header>
+<nav>
+  <ul>
+    <li><a href="{{ url_for('index') }}">Home</a></li>
+    <li><a href="{{ url_for('information') }}">Information</a></li>
+    <li><a href="{{ url_for('data_collection') }}">Data Collection</a></li>
+  </ul>
+</nav>
+<main>
+  <h2>Data Collection Form</h2>
+  <p>Please fill out this form to help us assess and improve student experiences at GIC.</p>
+  <!-- The form action should be empty for WTForms, and method should be POST -->
+  <form action="" method="post">
+    {{ form.hidden_tag() }}
+    <div>
+      {{ form.name.label }}<br>
+      {{ form.name(size=32) }}<br>
+    </div>
+    <div>
+      {{ form.student_number.label }}<br>
+      {{ form.student_number(size=32) }}<br>
+    </div>
+    <div>
+      {{ form.email.label }}<br>
+      {{ form.email(size=32) }}<br>
+    </div>
+    <div>
+      {{ form.grades.label }}<br>
+      {{ form.grades(size=32) }}<br>
+    </div>
+    <div>
+      {{ form.satisfaction.label }}
+      {% for subfield in form.satisfaction %}
+        <label class="satisfaction-radio">
+          {{ subfield }} {{ subfield.label.text }}
+        </label>
+      {% endfor %}
+    </div>
+    <div>
+      {{ form.suggestions.label }}<br>
+      {{ form.suggestions(rows=4, cols=50) }}<br>
+    </div>
+    <div>
+      {{ form.submit() }}
+    </div>
+  </form>
+</main>
+<footer>
+  <p>&copy; 2024 Glasgow International College</p>
+</footer>
+</body>
+</html>

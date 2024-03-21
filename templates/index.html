@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to GIC Student Progress Tracker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header>
+  <h1>Welcome to Glasgow International College Student Progress Tracker</h1>
+  <p>This website helps to assess and collect data on the academic progress of students at GIC.</p>
+</header>
+<nav>
+  <ul>
+    <li><a href="{{ url_for('index') }}">Home</a></li>
+    <li><a href="{{ url_for('information') }}">Information</a></li>
+    <li><a href="{{ url_for('data_collection') }}">Data Collection</a></li>
+  </ul>
+</nav>
+<main>
+  <section>
+    <p>Explore the Information page to learn more about the purpose of data collection and how it contributes to the improvement of academic experiences at GIC.</p>
+  </section>
+  <section>
+    <p>Visit the Data Collection page to provide your valuable feedback and insights regarding your academic journey at GIC.</p>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2024 Glasgow International College</p>
+</footer>
+</body>
+</html>

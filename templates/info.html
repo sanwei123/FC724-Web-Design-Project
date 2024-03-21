@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Information Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header>
+    <h1>Understanding Data Collection at GIC</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('information') }}">Information</a></li>
+        <li><a href="{{ url_for('data_collection') }}">Data Collection</a></li>
+    </ul>
+</nav>
+<div class="info-container">
+    <section class="info-section">
+        <h2>Why Collect Data?</h2>
+        <p class="info-text">Data collection at Glasgow International College (GIC) serves multiple purposes. It helps us to...</p>
+    </section>
+    <section class="info-section">
+        <h2>Benefits for Students</h2>
+        <p class="info-text">Students benefit from data collection in several ways...</p>
+        <ul class="info-list">
+            <li>Improved learning experiences</li>
+            <li>Personalized academic support</li>
+        </ul>
+    </section>
+    <section class="info-section">
+        <h2>How We Use Your Data</h2>
+        <p class="info-text">We use the collected data to improve academic services and student life...</p>
+    </section>
+</div>
+<footer>
+    <p>&copy; 2024 Glasgow International College</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* Basic reset and typography */
+body, h1, h2, h3, p, form, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header and navigation */
+header {
+    background-color: #005A9C;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #0073e6;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    /*background-color: #003366;*/
+    /*color: white;*/
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form styling */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+form label, form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #004494;
+}
+
+/* Responsive design for navigation */
+@media (max-width: 600px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Information Page specific styles */
+.info-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.info-heading, .info-section h2 {
+    color: #0056b3;
+}
+
+.info-section {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.info-link {
+    color: #0056b3;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+/* Inline radio buttons styling */
+.satisfaction-radio {
+  display: inline-block !important; /* Display radio buttons inline */
+  margin-right: 15px; /* Space between each radio button */
+}
+
+/* Styling for form labels and inputs */
+label, input, textarea {
+  display: block;
+  margin-bottom: 0.5em;
+}

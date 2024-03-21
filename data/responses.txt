@@ -1,0 +1,14 @@
+Name: 111
+Student Number: 222
+Email: 333@g.com
+Average Grade: 10
+Satisfaction: 4
+Suggestions: wera
+-----
+Name: 111
+Student Number: 222
+Email: 333@g.com
+Average Grade: 10
+Satisfaction: 4
+Suggestions: wera
+-----
